@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyNoteBook</string>
+    <string name="title">记事本</string>
+    <string name="btn_confirm">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_return">返回</string>
+    <string name="save_succ">保存成功！</string>
+    <string name="save_fail">保存失败！标题或内容不能为空！</string>
+</resources>
