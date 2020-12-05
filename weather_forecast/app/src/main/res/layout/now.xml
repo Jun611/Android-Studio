@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/weather_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:visibility="gone"
+
+        >
+
+            <ImageView
+                android:id="@+id/sunny"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/sunny" />
+
+            <ImageView
+                android:id="@+id/cloud"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/cloud" />
+
+            <ImageView
+                android:id="@+id/yin"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@mipmap/yin" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/weather_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather_photo"
+            android:layout_gravity="center"
+            android:textSize="62sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/degree_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/mix_max_degree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>

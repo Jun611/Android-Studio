@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <TextView
+        android:id="@+id/loveTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:text="我的关注"
+
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="2dp"
+        android:text = "列表"
+        android:background="#37dfb5"
+        />
+
+    <EditText
+        android:id="@+id/idCode"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loveTitle"
+        android:layout_alignParentLeft="true"
+        android:hint="输入城市ID"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:inputType = "number"/>
+    <Button
+        android:id="@+id/search1"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/loveTitle"
+        android:layout_marginLeft="130dp"
+        android:text = "查找"
+        android:background="#37dfb5"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idCode"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/listview"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/add"
+            android:visibility="gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/add" />
+    </RelativeLayout>
+</RelativeLayout>
